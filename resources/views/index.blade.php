@@ -63,5 +63,20 @@
             </tbody>
         </table>
     </div>
+
+    <div style="text-align: right; margin-bottom: 20px;">
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit" style="
+                background-color: #e53935;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            ">Logout</button>
+        </form>
+    </div>
+
 </body>
 </html>
